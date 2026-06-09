@@ -27,12 +27,10 @@ export default function Navbar() {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "py-3" : "py-6"
+        scrolled ? "py-2 bg-black/60 backdrop-blur-xl border-b border-white/10 shadow-2xl" : "py-4 bg-black/20 backdrop-blur-sm"
       }`}>
-        <div className={`max-w-6xl mx-auto px-6 transition-all duration-300 ${
-          scrolled ? "bg-black/40 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl mx-4 md:mx-auto" : ""
-        }`}>
-          <div className="flex items-center justify-between h-14 px-2">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
+          <div className="flex items-center justify-between h-12">
             {/* Logo */}
             <a href="#hero" className="flex items-center gap-3 group">
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center font-black text-white text-base shadow-lg shadow-blue-500/20 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
